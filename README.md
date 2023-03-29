@@ -5,5 +5,6 @@
 *  [Contact](#Contact)
 ## Technology
     - HTML
+    - CSS
 ## Design
 ## Contact
