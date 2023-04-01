@@ -8,4 +8,9 @@
     - CSS
     - PHP
 ## Design
+    - Header
+      Menu:
+      -Links to pages  
+    - Sections  
+    - Footer
 ## Contact
