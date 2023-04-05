@@ -10,7 +10,12 @@
 ## Design
     - Header
       Menu:
-      -Links to pages  
+      -Links to pages
+        - przeglad.php
+        - dokarmianie.php
+        - miodobranie.php
+        - ramki.php
+        - ul.php  
     - Sections  
     - Footer
 ## Contact
