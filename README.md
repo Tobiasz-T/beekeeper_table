@@ -10,7 +10,8 @@
 ## Design
     - Header
       Menu:
-      -Links to pages
+      -Logo
+      -Links to pages:
         - przeglad.php
         - dokarmianie.php
         - miodobranie.php
