@@ -10,57 +10,33 @@
 </head>
 <body>
     <div id="zad">
-                
                 <div id="box"><img src="img/bee-box.png"class="i1"><br><br><br><br><h5><a href="przegląd.php">Przegląd</a></h5></div>
                 <div id="box"><img src="img/bee.png"class="i2"><br><br><br><br><h5><a href="dokarmianie.php">Dokarmianie</a></h5></div>
                 <div id="box"><img src="img/honeycomb.png"class="i3"><br><br><br><br><h5><a href="miodobranie.php">Miodobranie</a></h5></div>
                 <div id="box"><img src="img/honey.png"class="i4"><br><br><br><br><h5><a href="ramki.php">Ramki</a></h5></div>
-                <div id="box"><img src="img/hive.png"class="i5"><br><br><br><br><h5><a href="ul.php">Rójka/Ul</a></h5></div>
-         <!--
-            <div class="cont">
-                <div class="button">
-                        <div class="icon">
-                                <i class="fa fa-phone-square"></i></div> 
-                                <span><h6><a href="przegląd.php">Przegląd</a></h6></span>
-                 </div>  
-                 <div class="button">
-                    <div class="icon">
-                        <i class="fab fa-whatsapp"></i></div>
-                            <span>tel:665-525-360</span>
-                 </div>  
-                 <div class="button">
-                    <div class="icon">
-                        <i class="fa fa-at"></i></div>
-                            <span>tobi1997tobi@wp.pl</span>
-                     </div>   
-                <div class="button">
-                <div class="icon">
-                        <i class="fab fa-linkedin"></i></div>
-                            <span><a href="https://www.linkedin.com/home">linkedin</a></span>
-                 </div>                
-            </div> -->       
+                <div id="box"><img src="img/hive.png"class="i5"><br><br><br><br><h5><a href="ul.php">Rójka/Ul</a></h5></div>      
     </div>
     
     <div id="contener">
         <div id="lc">
                 <div id="formularz-przeglad">
+                    <h1>Tabela pszczelarska - przegląd</h1>
                         <br>
                         <form method="post" action="">
                             <img src="img/bee-box.png">
-                            <!--<label>Ul: </label><input type="number" name="Ul"><br><br>-->
-                            <?php
-                $connect=mysqli_connect("localhost","root","","pszczelarstwo");
-                $sql="SELECT * FROM `ul`";
-                $wynik=mysqli_query($connect,$sql);
-                    while($wiersz=mysqli_fetch_assoc($wynik))
-                    {
-                        echo '<tr>';
-                        echo'<td><input type="radio" name="Ul"  value='.$wiersz['Ul'].'</td>';
-                        echo'<label>'.$wiersz['Ul'].'</label>';
-                        echo '</tr>';
-                    }
-                    mysqli_close($connect);
-                ?>
+                        <?php
+                            $connect=mysqli_connect("localhost","root","","pszczelarstwo");
+                            $sql="SELECT * FROM `ul`";
+                            $wynik=mysqli_query($connect,$sql);
+                                while($wiersz=mysqli_fetch_assoc($wynik))
+                                {
+                                    echo '<tr>';
+                                    echo'<td><input type="radio" name="Ul"  value='.$wiersz['Ul'].'</td>';
+                                    echo'<label>'.$wiersz['Ul'].'</label>';
+                                    echo '</tr>';
+                                }
+                                mysqli_close($connect);
+                        ?>
                             <label><br><br>Data: </label><input type="date" name="Data"><br><br>
                             <label>Opis: </label><input type="" name="Opis"><br><br>
                             <input type="submit" value="Zapisz">		
@@ -77,29 +53,6 @@
                         mysqli_close($connect);
                     }
 		        ?>    
-            <!--
-                <div id="formularz-dokarmianie">
-                    Data: <input type="date"><br><br>
-                    Rodzaj: <br>
-                    Waga: <input type="number"><br>
-                </div>
-                <div id="formularz-miodobranie">
-                    <br>
-                    Data: <input type="date"><br><br>
-                    Rodzaj: <br>
-                    Waga: <input type="number"><br>
-                </div>
-                <div id="formularz-ramka">
-                    <br>
-                    Data: <input type="date"><br><br>
-                    Rodzaj ramki: <br>
-                    Ilość: <input type="number"><br>
-                </div>
-                <div id="formularz-ul">
-                    <br>
-                    Data: <input type="date"><br><br>
-                </div>
-            -->
         </div>    
         <div id="rc">
         <table>

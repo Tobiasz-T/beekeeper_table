@@ -19,10 +19,10 @@
     <div id="contener">
         <div id="lc">
                 <div id="formularz-przeglad">
+                    <h1>Tabela pszczelarska - ul</h1>
                         <br>
                         <form method="post" action="">
                             <img src="img/bee-box.png">
-                            <!--<label>Ul: </label><input type="number" name="Ul"><br><br>-->
                             <label>Nowy Ul nr: </label><input type="number" name="Ul"><br><br>
                             <label>Data: </label><input type="date" name="Data"><br><br>
                             <input type="submit" value="Zapisz">		
@@ -37,30 +37,7 @@
                         $wynik=mysqli_query($connect,$sql);	
                         mysqli_close($connect);
                     }
-		        ?>    
-            <!--
-                <div id="formularz-dokarmianie">
-                    Data: <input type="date"><br><br>
-                    Rodzaj: <br>
-                    Waga: <input type="number"><br>
-                </div>
-                <div id="formularz-miodobranie">
-                    <br>
-                    Data: <input type="date"><br><br>
-                    Rodzaj: <br>
-                    Waga: <input type="number"><br>
-                </div>
-                <div id="formularz-ramka">
-                    <br>
-                    Data: <input type="date"><br><br>
-                    Rodzaj ramki: <br>
-                    Ilość: <input type="number"><br>
-                </div>
-                <div id="formularz-ul">
-                    <br>
-                    Data: <input type="date"><br><br>
-                </div>
-            -->
+		        ?> 
         </div>    
         <div id="rc">
             <table>
