@@ -19,23 +19,23 @@
     <div id="contener">
         <div id="lc">
                 <div id="formularz-przeglad">
+                    <h1>Tabela pszczelarska - ramki</h1>
                         <br>
                         <form method="post" action="">
                             <img src="img/bee-box.png">
-                            <!--<label>Ul: </label><input type="number" name="Ul"><br><br>-->
-                            <?php
-                $connect=mysqli_connect("localhost","root","","pszczelarstwo");
-                $sql="SELECT * FROM `ul`";
-                $wynik=mysqli_query($connect,$sql);
-                    while($wiersz=mysqli_fetch_assoc($wynik))
-                    {
-                        echo '<tr>';
-                        echo'<td><input type="radio" name="Ul"  value='.$wiersz['Ul'].'</td>';
-                        echo'<label>'.$wiersz['Ul'].'</label>';
-                        echo '</tr>';
-                    }
-                    mysqli_close($connect);
-                ?>
+                        <?php
+                            $connect=mysqli_connect("localhost","root","","pszczelarstwo");
+                            $sql="SELECT * FROM `ul`";
+                            $wynik=mysqli_query($connect,$sql);
+                                while($wiersz=mysqli_fetch_assoc($wynik))
+                                {
+                                    echo '<tr>';
+                                    echo'<td><input type="radio" name="Ul"  value='.$wiersz['Ul'].'</td>';
+                                    echo'<label>'.$wiersz['Ul'].'</label>';
+                                    echo '</tr>';
+                                }
+                                mysqli_close($connect);
+                        ?>
                             <label><br><br>Data: </label><input type="date" name="Data"><br><br>
                             <label>Rodzaj: </label><br><br>
                             <select name="Rodzaj">
@@ -59,29 +59,6 @@
                         mysqli_close($connect);
                     }
 		        ?>    
-            <!--
-                <div id="formularz-dokarmianie">
-                    Data: <input type="date"><br><br>
-                    Rodzaj: <br>
-                    Waga: <input type="number"><br>
-                </div>
-                <div id="formularz-miodobranie">
-                    <br>
-                    Data: <input type="date"><br><br>
-                    Rodzaj: <br>
-                    Waga: <input type="number"><br>
-                </div>
-                <div id="formularz-ramka">
-                    <br>
-                    Data: <input type="date"><br><br>
-                    Rodzaj ramki: <br>
-                    Ilość: <input type="number"><br>
-                </div>
-                <div id="formularz-ul">
-                    <br>
-                    Data: <input type="date"><br><br>
-                </div>
-            -->
         </div>    
         <div id="rc">
             <table>

@@ -33,6 +33,9 @@ body{
     display: flex;
     justify-content: center;
 }
+#lc{
+    color:rgb(77,76,75);
+}
 #footer{
     background-color: rgb(77,76,75);
     width: 100%;
@@ -53,34 +56,6 @@ td,tr{
 tr:hover{
     background-color: orangered;
 }
-/*
-#formularz, #baza{
-    width: 50%;
-    text-align: center;
-}
-#zad{
-    width:720px;
-    display: flex;
-    justify-content: center;
-}
-#box{
-    background-color: blue;
-    text-align: center;
-    width: 80px;
-    height: 80px;
-    margin:5px;
-    display: flex;
-    justify-content: center;
-}
-img {
-    width:70px;
-    height: 70px;
-}
-#zad img{
-    width:20px;
-    height:20px;
-}
-*/
 .cont .button {
     display: inline-flex;
     height: 60px;
@@ -127,33 +102,6 @@ img {
 a{
     text-decoration: none;
 }
-/*#box:hover{
-    width: 280px;
-    text-align: center;
-}
-#box{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    margin-left: 10px;
-    align-items: center;
-}
-#box h6{
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
-}
-
-#box h6:hover{
-    font-size: 20px;
-    font-weight: 20;
-    line-height: 60px;
-    margin-left: 14px;
-}*/
-
 #box{
     display: inline-flex;
     height: 80px;
