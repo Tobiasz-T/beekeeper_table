@@ -1,5 +1,6 @@
 ![obraz](https://user-images.githubusercontent.com/96210491/231587588-a2d653eb-2e9c-422e-99f2-c2efafc4ae3f.png)# beekeeper_table
-# beekeeper_table
+
+# Beekeeper_table
 ## Contents
 *  [Technology](#Technology)
 *  [Design](#Design)
@@ -19,7 +20,7 @@
         - ramki.php
         - ul.php  
     - Sections  
-    - Footer
+    - Footer  
 ## Contact
 - phone: 665-525-360
 - mail: tobi1997tobi@wp.pl
